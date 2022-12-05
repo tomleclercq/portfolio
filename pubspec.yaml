@@ -2,7 +2,7 @@ name: portfolio
 description: A new Flutter project.
 
 publish_to: 'none'
-version: 0.0.1+1
+version: 0.0.1+2
 
 environment:
   sdk: '>=2.18.5 <3.0.0'
