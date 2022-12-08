@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio/utils/constants.dart';
+import 'package:portfolio/utils/helpers.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class OpenLink extends StatefulWidget {
@@ -24,11 +24,17 @@ class _OpenLinkState extends State<OpenLink> {
   bool visited = false;
 
   void openLink(Uri link) async {
-    if (await canLaunchUrl(link)) {
-      launchUrl(link);
-    } else {
-      throw 'Could not launch $link';
+    bool success = false;
+    try {
+      if (await canLaunchUrl(link)) {
+        success = await launchUrl(link);
+      } else {
+        throw 'Could not launch $link';
+      }
+    } catch (e) {
+      rethrow;
     }
+    debugPrint('Link was ${success ? 'good' : 'bad'}');
   }
 
   @override
@@ -45,6 +51,7 @@ class _OpenLinkState extends State<OpenLink> {
             ),
           ),
           onTap: () {
+            debugPrint(link.toString());
             openLink(link);
             setState(() => visited = true);
           },

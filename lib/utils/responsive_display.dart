@@ -1,22 +1,5 @@
-import 'package:flutter/material.dart';
-
-const title = "Tom Leclercq";
-
-class AppColors {
-  static const int _greyPrimayValue = 0xFF4E4E4E;
-  static const grey = MaterialColor(
-    _greyPrimayValue,
-    {
-      200: Color(0xFF404040),
-      500: Color(_greyPrimayValue),
-      800: Color(0xFFAEAEAE),
-    },
-  );
-}
-
-enum Breakpoint { small, medium, large }
-
-enum LinkType { button, text }
+import 'package:flutter/widgets.dart';
+import 'package:portfolio/utils/helpers.dart';
 
 class ResponsiveDisplay {
   BuildContext context;
@@ -32,6 +15,9 @@ class ResponsiveDisplay {
       return Breakpoint.large;
     }
   }
+
+  double get x => MediaQuery.of(context).size.width;
+  double get y => MediaQuery.of(context).size.height;
 
   static bool isSmall(double width) => width < 640;
   static bool isMedium(double width) => width >= 641 && width <= 1007;
