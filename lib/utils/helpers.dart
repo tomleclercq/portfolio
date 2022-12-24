@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/pages/home.dart';
 import 'package:portfolio/utils/custom_styles.dart';
 
 export './custom_styles.dart';
@@ -18,8 +19,20 @@ class AppColors {
   );
 }
 
-enum Breakpoint { small, medium, large }
+///MediaQuery
+///
+/// [small] => width < 640
+///
+/// [medium] => width >= 641 && width <= 1007
+///
+/// [large]=> width > 1007
+enum Breakpoint { xsmall, small, medium, large, xlarge }
 
 enum LinkType { button, text }
 
-Widget MyTitle() => CustomStyles.getText("Tom <b>Leclercq</b>");
+Widget myTitle() {
+  return InkWell(
+    child: CustomStyles.getText("Tom <b>Leclercq</b>"),
+    onTap: () => Home.routeTo(),
+  );
+}

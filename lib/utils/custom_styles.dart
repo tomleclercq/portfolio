@@ -23,15 +23,22 @@ class CustomStyles {
   static TextStyle bold = body.copyWith(
     fontWeight: FontWeight.bold,
   );
+  static TextStyle small = body.copyWith(
+    fontSize: 14,
+  );
+  static TextStyle smallBold = body.copyWith(
+    fontWeight: FontWeight.bold,
+    fontSize: 14,
+  );
   static const footer = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w200,
   );
 
-  static Widget getText(String text) {
+  static Widget getText(String text, {TextStyle style = CustomStyles.body}) {
     return StyledText(
       text: text,
-      style: CustomStyles.body,
+      style: style,
       tags: {
         'b': StyledTextTag(style: CustomStyles.bold),
       },

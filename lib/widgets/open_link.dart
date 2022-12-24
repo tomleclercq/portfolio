@@ -45,7 +45,7 @@ class _OpenLinkState extends State<OpenLink> {
         return InkWell(
           child: Text(
             widget.title ?? widget.url,
-            style: TextStyle(
+            style: CustomStyles.body.copyWith(
               color: !visited ? Colors.blue : Colors.purple,
               decoration: TextDecoration.underline,
             ),
