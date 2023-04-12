@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/pages/contact.dart';
 import 'package:portfolio/pages/curriculum_vitae.dart';
 import 'package:portfolio/widgets/base_page.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'firebase_options.dart';
 import 'pages/home.dart';
@@ -13,9 +14,9 @@ final navigatorKey = GlobalKey<NavigatorState>();
 // ...
 
 void main() async {
-  //setPathUrlStrategy();
+  setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.web);
   await FirebaseAppCheck.instance.activate(
     webRecaptchaSiteKey: '6Lc1ebMjAAAAAPe2dyVz7pLdVPcnzIKCKyxJThGQ',
     androidProvider: AndroidProvider.debug,

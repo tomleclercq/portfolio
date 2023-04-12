@@ -64,10 +64,10 @@ class _HomeState extends State<Home> {
         Container(
           width: double.infinity,
           padding: const EdgeInsets.only(bottom: 32),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
-            children: const [
+            children: [
               OpenLink(
                 LinkType.button,
                 icon: FontAwesomeIcons.twitter,

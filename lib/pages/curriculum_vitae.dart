@@ -5,7 +5,7 @@ import 'package:portfolio/widgets/section.dart';
 
 class CurriculumVitae extends StatefulWidget {
   const CurriculumVitae({super.key});
-  static String name = 'cv';
+  static String name = '/cv';
 
   static Future<void> routeTo() async {
     await Navigator.of(navigatorKey.currentContext!)
@@ -23,16 +23,16 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
 
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal: display.x * 0.05,
-        vertical: display.y * 0.05,
+        horizontal: 4 + display.x * 0.1,
+        vertical: 8 + display.y * 0.1,
       ),
-      child: SizedBox(
+      child: const SizedBox(
         width: double.infinity,
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Center(
                 child: Text(
                   'Curriculum Vitae',

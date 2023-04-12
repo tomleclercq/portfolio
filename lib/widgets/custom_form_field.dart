@@ -22,7 +22,6 @@ class CustomFormField extends StatefulWidget {
 }
 
 class _CustomFormFieldState extends State<CustomFormField> {
-  dynamic _value;
   late ResponsiveDisplay display;
   @override
   void didChangeDependencies() {
@@ -34,10 +33,9 @@ class _CustomFormFieldState extends State<CustomFormField> {
 
   void save(String? value) {
     if (value != null) {
-      setState(() => _value = value);
       if (widget.onSaved != null) {
-        debugPrint('SAVED ${widget.label}: $_value');
-        widget.onSaved!(_value);
+        debugPrint('SAVED ${widget.label}: $value');
+        widget.onSaved!(value);
       }
     } else {
       debugPrint('NOTHING TO SAVE');
