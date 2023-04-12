@@ -43,80 +43,95 @@ class _ContactFormState extends State<ContactForm> {
   Widget build(BuildContext context) {
     return Form(
       key: _formKey,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          CustomStyles.getText('Contact me', style: CustomStyles.h3),
-          const SizedBox(height: 16),
-          CustomFormField(
-            autoFocus: true,
-            label: 'Full name:',
-            hint: 'How shall I call you?',
-            onSaved: (value) => setState(() => _name = value),
-            validator: (value) {
-              if (value?.isEmpty ?? true) {
-                return 'Please enter your name';
-              }
-              return null;
-            },
-          ),
-          const SizedBox(height: 4),
-          CustomFormField(
-            label: 'Email:',
-            hint: 'What is your email?',
-            onSaved: (value) => setState(() => _email = value),
-            validator: (value) {
-              if (value?.isEmpty ?? true) {
-                return 'Please enter your email';
-              } else {
-                if (!RegExp(
-                        r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-                    .hasMatch(value!)) {
-                  return 'Please enter a valid email';
-                }
-              }
-              return null;
-            },
-          ),
-          const SizedBox(height: 8),
-          CustomFormField(
-            label: 'Message:',
-            hint: 'How may I help you?',
-            multiline: true,
-            onSaved: (value) => setState(() => _message = value),
-            validator: (value) {
-              if (value?.isEmpty ?? true) {
-                return 'Please enter a message';
-              }
-              return null;
-            },
-          ),
-          const SizedBox(height: 8),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: TextButton(
-              style: TextButton.styleFrom(
-                  shape: const BeveledRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(0))),
-                  foregroundColor: Colors.black,
-                  backgroundColor: Colors.teal),
-              child: const Text('Send'),
-              onPressed: () async {
-                formFocus.requestFocus();
-                if (_formKey.currentState != null &&
-                    _formKey.currentState!.validate()) {
-                  _formKey.currentState!.save();
-                  final success = await _submitForm();
-                  _informUser(success);
-                  if (success) {
-                    resetForm();
+      child: FocusTraversalGroup(
+        policy: OrderedTraversalPolicy(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            CustomStyles.getText('Contact me', style: CustomStyles.h3),
+            const SizedBox(height: 16),
+            FocusTraversalOrder(
+              order: const NumericFocusOrder(1.0),
+              child: CustomFormField(
+                autoFocus: true,
+                label: 'Full name:',
+                hint: 'How shall I call you?',
+                onSaved: (value) => setState(() => _name = value),
+                validator: (value) {
+                  if (value?.isEmpty ?? true) {
+                    return 'Please enter your name';
                   }
-                }
-              },
+                  return null;
+                },
+              ),
             ),
-          ),
-        ],
+            const SizedBox(height: 4),
+            FocusTraversalOrder(
+              order: const NumericFocusOrder(2.0),
+              child: CustomFormField(
+                label: 'Email:',
+                hint: 'What is your email?',
+                onSaved: (value) => setState(() => _email = value),
+                validator: (value) {
+                  if (value?.isEmpty ?? true) {
+                    return 'Please enter your email';
+                  } else {
+                    if (!RegExp(
+                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                        .hasMatch(value!)) {
+                      return 'Please enter a valid email';
+                    }
+                  }
+                  return null;
+                },
+              ),
+            ),
+            const SizedBox(height: 8),
+            FocusTraversalOrder(
+              order: const NumericFocusOrder(3.0),
+              child: CustomFormField(
+                label: 'Message:',
+                hint: 'How may I help you?',
+                multiline: true,
+                onSaved: (value) => setState(() => _message = value),
+                validator: (value) {
+                  if (value?.isEmpty ?? true) {
+                    return 'Please enter a message';
+                  }
+                  return null;
+                },
+              ),
+            ),
+            const SizedBox(height: 8),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: FocusTraversalOrder(
+                order: const NumericFocusOrder(4.0),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      shape: const BeveledRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(0))),
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.teal),
+                  child: const Text('Send'),
+                  onPressed: () async {
+                    formFocus.requestFocus();
+                    if (_formKey.currentState != null &&
+                        _formKey.currentState!.validate()) {
+                      _formKey.currentState!.save();
+                      final success = await _submitForm();
+                      _informUser(success);
+                      if (success) {
+                        resetForm();
+                      }
+                    }
+                  },
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -138,12 +153,10 @@ class _ContactFormState extends State<ContactForm> {
     };
     try {
       final db = FirebaseFirestore.instance;
-      DocumentReference doc = await db.collection("feedback_form").add(newForm);
-      debugPrint('Form added with ID: ${doc.id} $newForm');
+      await db.collection("feedback_form").add(newForm);
       sucess = true;
     } catch (e) {
       sucess = false;
-      debugPrint(e.toString());
       rethrow;
     }
     return sucess;

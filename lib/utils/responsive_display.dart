@@ -1,14 +1,22 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:portfolio/utils/helpers.dart';
 
 class ResponsiveDisplay {
   BuildContext context;
+
   ResponsiveDisplay(this.context);
   static double xS = 380;
   static double s = 400;
   static double m = 640;
   static double l = 1008;
   static double xL = 1440;
+
+  bool get isMobile {
+   return   kIsWeb &&
+      (defaultTargetPlatform == TargetPlatform.iOS ||
+          defaultTargetPlatform == TargetPlatform.android);
+  }
 
   Breakpoint get breakpoint {
     if (isXLarge(context)) {

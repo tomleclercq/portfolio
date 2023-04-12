@@ -19,7 +19,6 @@ class _ContactState extends State<Contact> {
   double get formWidth {
     double width;
     final breakpoint = ResponsiveDisplay(context).breakpoint;
-    debugPrint(breakpoint.name);
     switch (breakpoint) {
       case Breakpoint.xsmall:
       case Breakpoint.small:

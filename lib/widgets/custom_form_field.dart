@@ -34,11 +34,8 @@ class _CustomFormFieldState extends State<CustomFormField> {
   void save(String? value) {
     if (value != null) {
       if (widget.onSaved != null) {
-        debugPrint('SAVED ${widget.label}: $value');
         widget.onSaved!(value);
       }
-    } else {
-      debugPrint('NOTHING TO SAVE');
     }
   }
 

@@ -34,7 +34,6 @@ class _OpenLinkState extends State<OpenLink> {
     } catch (e) {
       rethrow;
     }
-    debugPrint('Link was ${success ? 'good' : 'bad'}');
   }
 
   @override
@@ -51,7 +50,6 @@ class _OpenLinkState extends State<OpenLink> {
             ),
           ),
           onTap: () {
-            debugPrint(link.toString());
             openLink(link);
             setState(() => visited = true);
           },
