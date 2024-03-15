@@ -24,10 +24,9 @@ class _OpenLinkState extends State<OpenLink> {
   bool visited = false;
 
   void openLink(Uri link) async {
-    bool success = false;
     try {
       if (await canLaunchUrl(link)) {
-        success = await launchUrl(link);
+        await launchUrl(link);
       } else {
         throw 'Could not launch $link';
       }

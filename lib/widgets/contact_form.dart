@@ -113,7 +113,7 @@ class _ContactFormState extends State<ContactForm> {
                       shape: const BeveledRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(0))),
                       foregroundColor: Colors.black,
-                      backgroundColor: Colors.teal),
+                      backgroundColor: Colors.blueGrey),
                   child: const Text('Send'),
                   onPressed: () async {
                     formFocus.requestFocus();
