@@ -67,8 +67,10 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Section(
                 title: 'Experiences',
                 listItems: [
-                  'Jan. 2021 <b>Team lead</b> Flutter mobile application development',
-                  'Jun. 2020 Promoted to <b>Senior Specialist</b> - Mobile developer',
+                  'Present <b>Senior Developer</b> Application developer',
+                  'Jan. 2022 <b>Senior Developer</b> Flutter application developer',
+                  'Jan. 2021 <b>Team lead</b> Flutter mobile application developer',
+                  'Jun. 2020 <b>Senior Specialist</b> - Mobile developer',
                   'Mar. 2019 <b>Facilitator</b> Digital Masterclass Deloitte Belgium',
                   'Mar. 2017 Blending Game Jam, Brussels (VR project Developer)',
                   'Oct. 2015 Kiss Your Teacher (<b>Developer</b>)',
