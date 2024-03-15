@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
             children: [
               OpenLink(
                 LinkType.button,
-                icon: FontAwesomeIcons.twitter,
+                icon: FontAwesomeIcons.xTwitter,
                 url: 'https://twitter.com/TomLeclercq',
               ),
               OpenLink(
