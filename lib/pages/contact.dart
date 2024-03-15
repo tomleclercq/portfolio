@@ -64,8 +64,8 @@ class _ContactState extends State<Contact> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomStyles.getText('Tom <b>Leclercq</b>'),
-                  CustomStyles.getText('41/12 Hector Henneaulaan'),
-                  CustomStyles.getText('1930 Zaventem'),
+                  CustomStyles.getText('Place Madelgaire 29'),
+                  CustomStyles.getText('7060 Soignies'),
                   const SizedBox(height: 8),
                   CustomStyles.getText('+32(0)477130090'),
                 ],
