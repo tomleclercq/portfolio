@@ -110,10 +110,9 @@ class _ContactFormState extends State<ContactForm> {
                 order: const NumericFocusOrder(4.0),
                 child: TextButton(
                   style: TextButton.styleFrom(
-                      shape: const BeveledRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(0))),
-                      foregroundColor: Colors.black,
-                      backgroundColor: Colors.blueGrey),
+                    shape: const BeveledRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(0))),
+                  ),
                   child: const Text('Send'),
                   onPressed: () async {
                     formFocus.requestFocus();

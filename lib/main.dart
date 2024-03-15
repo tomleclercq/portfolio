@@ -8,6 +8,7 @@ import 'package:url_strategy/url_strategy.dart';
 
 import 'firebase_options.dart';
 import 'pages/home.dart';
+import 'theme/color_schemes.g.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
@@ -18,7 +19,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.web);
   await FirebaseAppCheck.instance.activate(
-      webRecaptchaSiteKey: '6LcRu34lAAAAALCkxGeVSzBCuDbNG_MMTia9Pkiz');
+      webProvider:
+          ReCaptchaV3Provider('6LcRu34lAAAAALCkxGeVSzBCuDbNG_MMTia9Pkiz'));
   runApp(const Portefolio());
 }
 
@@ -32,22 +34,8 @@ class Portefolio extends StatelessWidget {
       child: MaterialApp(
         navigatorKey: navigatorKey,
         title: 'Tom Leclercq',
-        theme: ThemeData(
-          primarySwatch: Colors.grey,
-          colorScheme: const ColorScheme(
-            primary: Colors.grey,
-            onPrimary: Colors.black38,
-            secondary: Colors.black38,
-            onSecondary: Colors.grey,
-            brightness: Brightness.light,
-            background: Color.fromARGB(255, 226, 226, 226),
-            onBackground: Colors.black38,
-            error: Colors.purple,
-            onError: Colors.white,
-            surface: Colors.grey,
-            onSurface: Colors.black38,
-          ),
-        ),
+        theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
+        darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
         builder: (context, child) => BasePage(context, child),
         routes: {
           Home.name: (context) => const Home(),

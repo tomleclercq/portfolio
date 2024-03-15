@@ -25,7 +25,6 @@ class CustomDrawer extends StatelessWidget {
         children: [
           ListTile(
             leading: const FaIcon(Icons.home_outlined),
-            tileColor: Colors.grey,
             title: Container(
               padding: const EdgeInsets.only(
                 left: 16,

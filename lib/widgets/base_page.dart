@@ -37,7 +37,6 @@ class _BasePageState extends State<BasePage> {
                 title: myTitle(),
                 elevation: 0.0,
                 automaticallyImplyLeading: true,
-                backgroundColor: Colors.grey[400],
                 systemOverlayStyle: SystemUiOverlayStyle.light,
               ),
             ),
