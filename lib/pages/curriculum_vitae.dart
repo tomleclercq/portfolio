@@ -71,15 +71,15 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Section(
                 title: 'Experiences',
                 listItems: [
-                  '''Jan. 2021 - now <b>Lead</b>:
+                  '''Jan. 2021 - now: <b>Lead</b>
  + Flutter mobile application developer
  + Diversity, equity, inclusion: LGBT+ co-lead of consulting Deloitte, Belgium''',
-                  '''Jan. 2020 - now <b>Senior Developer</b>:
+                  '''Jan. 2020 - now: <b>Senior Developer</b>
  + Flutter application developer
  + React application developer
  + C# Unity3D Tool developer
  + Mobile developer''',
-                  '''Mar. 2019 - now <b>Facilitator</b>:
+                  '''Mar. 2019 - now: <b>Facilitator</b>
  + A11y workshops
  + Inclusivity roundtables
  + Knowledge-Sharing Sessions
