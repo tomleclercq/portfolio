@@ -41,62 +41,67 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                 ),
               ),
               Section(
-                title: 'Skills and Training',
+                title: 'Skills',
                 listItems: [
-                  '<b>Font-End</b> Developer: <b>Flutter</b>, React-Native, <b>React</b>, native Android & iOS',
-                  'Unity3D - behaviours, <b>tools editor</b>, plugin',
-                  '<b>Dart</b>, C#, C++, lua, any required language',
-                  'Image editing, <b>wireframe</b>, 2D/3D concepts, <b>UX design</b>',
-                  'Aug. 2024 Accessibility - Abra training',
-                  'Mar. 2017 Structure and computer Network - Training',
-                  'Mar. 2017 Administering Windows Server 2012 R2 - Training',
+                  '<b>Font-End</b> Developer: <b>Flutter</b>, React Native, <b>React</b>, native Android & iOS',
+                  'Unity3D - plugin, <b>custom editor tools</b>, behaviours',
+                  'JavaScript, <b>Dart</b>, C#, C++, lua, HTML/CSS, any other required language',
+                  'Image editing, <b>2D/3D concepts</b>, wireframe, <b>UX design</b>',
                 ],
               ),
               Section(
                 title: 'Interests',
                 listItems: [
-                  'Movies, <b>Arts</b>, Games, Music, Travel, <b>Science</b>, Human interaction, <b>Technologies</b>.',
-                ],
-              ),
-              Section(
-                title: 'Memberships',
-                listItems: [
-                  '''Open@Work - Representative for Deloitte''',
-                  '''Deloitte Diversity Equity Inclusion:
- + Proud - Core team
- + <b>LGBT+</b> - Team Lead for Technology''',
-                  'Deloitte <b>EMEA Metaverse</b> - Community member',
+                  '<b>Human interactions</b>, Movies, <b>Arts</b>, Games, Music, <b>Science</b>, Travel, <b>Technologies</b>.',
                 ],
               ),
               Section(
                 title: 'Experiences',
                 listItems: [
-                  '''Jan. 2021 - now: <b>Lead</b>
- + Flutter mobile application developer
- + Diversity, equity, inclusion: LGBT+ co-lead of consulting Deloitte, Belgium''',
-                  '''Jan. 2020 - now: <b>Senior Developer</b>
- + Flutter application developer
- + React application developer
- + C# Unity3D Tool developer
+                  '''Jan. 2021 - Now: <b>Senior Developer & Team Lead</b>
+ + Application developer: <b>Flutter</b> & <b>React</b>
+ + Tools developer: <b>Unity3D C#</b>, Excel & MacOS/Windows scripting
  + Mobile developer''',
-                  '''Mar. 2019 - now: <b>Facilitator</b>
- + A11y workshops
+                  '''Mar. 2019 - Now: <b>Facilitator</b>
+ + <b>A11y</b> workshops
  + Inclusivity roundtables
- + Knowledge-Sharing Sessions
- + Digital Masterclass Deloitte Belgium''',
+ + <b>KNowledge sharing sessions</b>: 3D, spatial displays, a11y, coding principles and more
+ + Digital Masterclass''',
                   '''Mar. 2017: Blending Game Jam, Brussels (VR project Developer)''',
-                  '''Oct. 2015: Kiss Your Teacher (<b>Developer</b>)''',
-                  '''Jan. 2015: Global Game Jam, Antwerpen (<b>3D modelisation, Developer</b>)''',
+                  '''Oct. 2015: Kiss Your Teacher (Developer)''',
+                  '''Jan. 2015: Global Game Jam, Antwerpen (3D Artist & Developer)''',
                   '''Jan. 2014: Global Game Jam, Antwerpen (Developer)''',
-                  '''Sept. 2009 - June 2013 <b>Bachelor</b> as Graphic Designer, specialised in <b>Video Game Developement</b> - HEAJ, Namur.''',
+                  '''Sept. 2009 - June 2013: <b>Bachelor</b> as Graphic Designer, specialised in <b>Video Game Developement</b> - HEAJ, Namur.''',
+                ],
+              ),
+              Section(
+                title: 'Trainings',
+                listItems: [
+                  'Aug. 2024: Accessibility - Abra training',
+                  'Oct. 2023: Know your voice',
+                  'Nov. 2022: <b>Leading for change</b> & Managing change',
+                  'Jun. 2021: First aids at work',
+                  'Oct. 2018: User story writing',
+                  'Sep. 2018: <b>Scrum & Agile</b>',
+                  'Mar. 2017: Structure and <b>computer Network</b>',
+                  'Mar. 2017: <b>Administering Windows Server</b> 2012 R2',
+                ],
+              ),
+              Section(
+                title: 'Memberships',
+                listItems: [
+                  '''<b>Open@Work</b> - Representative for Deloitte''',
+                  'Deloitte <b>EMEA Metaverse</b> - Community member',
+                  '''Deloitte <b>Diversity Equity Inclusion</b>:
+ + Proud - Core team''',
                 ],
               ),
               Section(
                 title: 'Professional History',
                 listItems: [
-                  'Feb. 2018 - Present <b>Senior specialist, Front-end developer</b>, Deloitte Digital, Belgium',
-                  'Sept. 2013 - Jan. 2018 <b>Interactive Application Developer and Graphic designer</b>, Brandfirst',
-                  'Dec. 2012 - Mar. 2013 Internship Developer C# - Brandfirst',
+                  'Feb. 2018 - Now: <b>Senior specialist, Front-end developer</b>, Deloitte Digital - Zaventem, Belgium',
+                  'Sept. 2013 - Jan. 2018: <b>Interactive Application Developer and Graphic designer</b>, Brandfirst - Brussels, Belgium',
+                  'Dec. 2012 - Mar. 2013: Internship Developer C# - Brandfirst - Brussels, Belgium',
                 ],
               ),
             ],
