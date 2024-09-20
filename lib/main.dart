@@ -42,6 +42,13 @@ class Portefolio extends StatelessWidget {
           CurriculumVitae.name: (context) => const CurriculumVitae(),
           Contact.name: (context) => const Contact(),
         },
+        onUnknownRoute: (RouteSettings settings) {
+          return MaterialPageRoute<void>(
+            settings: settings,
+            builder: (BuildContext context) =>
+                const Scaffold(body: Center(child: Text('Not Found'))),
+          );
+        },
         debugShowCheckedModeBanner: false,
       ),
     );

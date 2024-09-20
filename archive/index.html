@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <base href="/">
@@ -43,6 +43,7 @@
       var loading = document.querySelector('#loading');
       loading.textContent = "Welcome - work in progress";
       _flutter.loader.loadEntrypoint({
+        entrypointUrl: "./main.dart.js",
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         }
