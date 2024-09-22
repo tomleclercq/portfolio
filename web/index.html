@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <base href="$FLUTTER_BASE_HREF">
@@ -43,8 +43,10 @@
       var loading = document.querySelector('#loading');
       loading.textContent = "Welcome - work in progress";
       _flutter.loader.load({
+        entrypointUrl: window.location.origin + "/main.dart.js",
         serviceWorker: {
           serviceWorkerVersion: flutter_service_worker_version,
+          serviceWorkerUrl: window.location.origin +"/flutter_service_worker.js?v=",
         }
       }).then(function (engineInitializer) {
         loading.textContent = "Have a nice day!";

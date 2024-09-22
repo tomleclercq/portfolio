@@ -20,11 +20,10 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
   @override
   Widget build(BuildContext context) {
     final display = ResponsiveDisplay(context);
-
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal: 4 + display.x * 0.1,
-        vertical: 8 + display.y * 0.1,
+        horizontal: 4 + display.x * 0.05,
+        vertical: 8 + display.y * 0.05,
       ),
       child: const SizedBox(
         width: double.infinity,
@@ -32,59 +31,77 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Center(
+              Padding(
+                padding: EdgeInsets.only(bottom: 32.0),
                 child: Text(
                   'Curriculum Vitae',
                   style: CustomStyles.h1,
                 ),
               ),
               Section(
-                title: 'Skills and Training',
+                title: 'Skills',
                 listItems: [
-                  '<b>Font-End</b> Developer: <b>Flutter</b>, React-Native, native Android & iOS',
-                  'Developer Unity3D - behaviours, tools editor, plugin',
-                  '<b>Dart</b>, C#, C++, lua, the required language',
-                  'Image editing, <b>wireframe</b>, 2D/3D concepts, <b>User-Experience design</b>',
-                  'Mar. 2017 Structure and computer Network - Training',
-                  'Mar. 2017 Administering Windows Server 2012 R2 - Training',
+                  '<b>Font-End</b> Developer: <b>Flutter</b>, React Native, <b>React</b>, native Android & iOS',
+                  'Unity3D - plugin, <b>custom editor tools</b>, behaviours',
+                  'JavaScript, <b>Dart</b>, C#, C++, lua, HTML/CSS, any other required language',
+                  'Image editing, <b>2D/3D concepts</b>, wireframe, <b>UX design</b>',
                 ],
               ),
               Section(
                 title: 'Interests',
                 listItems: [
-                  '> Arts, Movies, Games, Music, <b>Science</b>, Socio-cultural interaction, <b>Technologies</b>.',
-                ],
-              ),
-              Section(
-                title: 'Memberships',
-                listItems: [
-                  '<b>Deloitte EMEA Metaverse</b> Community, Tech Lead',
-                  'Deloitte GLOBE, core-member & Open@Work',
-                  'Deloitte Diversity Equity & Inclusion, SPOC <b>LGBT+</b> consulting',
+                  '<b>Human interactions</b>, Movies, <b>Arts</b>, Games, Music, <b>Science</b>, Travel, <b>Technologies</b>.',
                 ],
               ),
               Section(
                 title: 'Experiences',
                 listItems: [
-                  'Present <b>Senior Developer</b> Application developer',
-                  'Jan. 2022 <b>Senior Developer</b> Flutter application developer',
-                  'Jan. 2021 <b>Team lead</b> Flutter mobile application developer',
-                  'Jun. 2020 <b>Senior Specialist</b> - Mobile developer',
-                  'Mar. 2019 <b>Facilitator</b> Digital Masterclass Deloitte Belgium',
-                  'Mar. 2017 Blending Game Jam, Brussels (VR project Developer)',
-                  'Oct. 2015 Kiss Your Teacher (<b>Developer</b>)',
-                  'Jan. 2015 Global Game Jam, Antwerpen (<b>3D modelisation, Developer</b>)',
-                  'Jan. 2014 Global Game Jam, Antwerpen (Developer)',
-                  'Sept. 2009 - June 2013 <b>Bachelor</b> in Graphic Design, <b>specialised in Video Game Developement</b> - HEAJ, Namur.',
+                  '''Jan. 2021 - Now: <b>Senior Developer & Team Lead</b>
+ + Application developer: <b>Flutter</b> & <b>React</b>
+ + Tools developer: <b>Unity3D C#</b>, Excel & MacOS/Windows scripting
+ + Mobile developer''',
+                  '''Mar. 2019 - Now: <b>Facilitator</b>
+ + <b>A11y</b> workshops
+ + Inclusivity roundtables
+ + <b>KNowledge sharing sessions</b>: 3D, spatial displays, a11y, coding principles and more
+ + Digital Masterclass''',
+                  '''Mar. 2017: Blending Game Jam, Brussels (VR project Developer)''',
+                  '''Oct. 2015: Kiss Your Teacher (Developer)''',
+                  '''Jan. 2015: Global Game Jam, Antwerpen (3D Artist & Developer)''',
+                  '''Jan. 2014: Global Game Jam, Antwerpen (Developer)''',
+                  '''Sept. 2009 - June 2013: <b>Bachelor</b> as Graphic Designer, specialised in <b>Video Game Developement</b> - HEAJ, Namur.''',
+                ],
+              ),
+              Section(
+                title: 'Trainings',
+                listItems: [
+                  'Aug. 2024: Accessibility - Abra training',
+                  'Oct. 2023: Know your voice',
+                  'Nov. 2022: <b>Leading for change</b> & Managing change',
+                  'Jun. 2021: First aids at work',
+                  'Oct. 2018: User story writing',
+                  'Sep. 2018: <b>Scrum & Agile</b>',
+                  'Mar. 2017: Structure and <b>computer Network</b>',
+                  'Mar. 2017: <b>Administering Windows Server</b> 2012 R2',
+                ],
+              ),
+              Section(
+                title: 'Memberships',
+                listItems: [
+                  '''<b>Open@Work</b> - Representative for Deloitte''',
+                  'Deloitte <b>EMEA Metaverse</b> - Community member',
+                  '''Deloitte <b>Diversity Equity Inclusion</b>:
+ + Proud - Core team''',
                 ],
               ),
               Section(
                 title: 'Professional History',
                 listItems: [
-                  'Feb. 2018 - Present <b>Senior specialist, Front-end developer</b>, Deloitte Digital',
-                  'Sept. 2013 - Jan. 2018 <b>Interactive Application Developer and Graphic designer</b>, Brandfirst',
-                  'Dec. 2012 - Mar. 2013 Internship Developer C# - Brandfirst',
+                  'Feb. 2018 - Now: <b>Senior specialist, Front-end developer</b>, Deloitte Digital - Zaventem, Belgium',
+                  'Sept. 2013 - Jan. 2018: <b>Interactive Application Developer and Graphic designer</b>, Brandfirst - Brussels, Belgium',
+                  'Dec. 2012 - Mar. 2013: Internship Developer C# - Brandfirst - Brussels, Belgium',
                 ],
               ),
             ],

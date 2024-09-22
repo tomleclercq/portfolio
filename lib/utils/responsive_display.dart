@@ -13,9 +13,9 @@ class ResponsiveDisplay {
   static double xL = 1440;
 
   bool get isMobile {
-   return   kIsWeb &&
-      (defaultTargetPlatform == TargetPlatform.iOS ||
-          defaultTargetPlatform == TargetPlatform.android);
+    return kIsWeb &&
+        (defaultTargetPlatform == TargetPlatform.iOS ||
+            defaultTargetPlatform == TargetPlatform.android);
   }
 
   Breakpoint get breakpoint {

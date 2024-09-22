@@ -29,21 +29,25 @@ class Portefolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MediaQuery(
-      data: const MediaQueryData(),
-      child: MaterialApp(
-        navigatorKey: navigatorKey,
-        title: 'Tom Leclercq',
-        theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
-        darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
-        builder: (context, child) => BasePage(context, child),
-        routes: {
-          Home.name: (context) => const Home(),
-          CurriculumVitae.name: (context) => const CurriculumVitae(),
-          Contact.name: (context) => const Contact(),
-        },
-        debugShowCheckedModeBanner: false,
-      ),
+    return MaterialApp(
+      navigatorKey: navigatorKey,
+      title: 'Tom Leclercq',
+      theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
+      darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
+      builder: (context, child) => BasePage(context, child),
+      routes: {
+        Home.name: (context) => const Home(),
+        CurriculumVitae.name: (context) => const CurriculumVitae(),
+        Contact.name: (context) => const Contact(),
+      },
+      onUnknownRoute: (RouteSettings settings) {
+        return MaterialPageRoute<void>(
+          settings: settings,
+          builder: (BuildContext context) =>
+              const Scaffold(body: Center(child: Text('Not Found'))),
+        );
+      },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
