@@ -22,7 +22,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '591301532';
+    var flutter_service_worker_version = null;
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -42,10 +42,11 @@
     window.addEventListener('load', function (ev) {
       var loading = document.querySelector('#loading');
       loading.textContent = "Welcome - work in progress";
-      _flutter.loader.loadEntrypoint({
-        entrypointUrl: "./main.dart.js",
+      _flutter.loader.load({
+        entrypointUrl: window.location.origin + "/main.dart.js",
         serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
+          serviceWorkerVersion: flutter_service_worker_version,
+          serviceWorkerUrl: window.location.origin +"/flutter_service_worker.js?v=",
         }
       }).then(function (engineInitializer) {
         loading.textContent = "Have a nice day!";
