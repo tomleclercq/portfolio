@@ -35,8 +35,8 @@ class ResponsiveDisplay {
   double get x => MediaQuery.of(context).size.width;
   double get y => MediaQuery.of(context).size.height;
 
-  static getWidth(BuildContext context) => MediaQuery.of(context).size.width;
-  static getHeight(BuildContext context) => MediaQuery.of(context).size.height;
+  static double getWidth(BuildContext context) => MediaQuery.of(context).size.width;
+  static double getHeight(BuildContext context) => MediaQuery.of(context).size.height;
 
   /// Small => width < 400
   static bool isXSmall(BuildContext context) {
