@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+# for requests for index.html, just respond with the file
+RewriteCond $1 !^(index\.html|assets|robots\.txt|favicon\.png)
+# if requested path is not a valid filename, continue rewrite
+RewriteCond %{REQUEST_FILENAME} !-f
+# if requested path is not a valid directory, continue rewrite
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ index.html [L]
