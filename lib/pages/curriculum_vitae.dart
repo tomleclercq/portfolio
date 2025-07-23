@@ -36,8 +36,8 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Padding(
                 padding: EdgeInsets.only(bottom: 32.0),
                 child: Text(
-                  'Curriculum Vitae',
-                  style: CustomStyles.h1,
+                  'I am a creative mine, a digital creator. Passion is my driver. I love human interaction and technology ',
+                  style: CustomStyles.body,
                 ),
               ),
               Section(
@@ -47,12 +47,6 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                   'Unity3D - plugin, <b>custom editor tools</b>, behaviours',
                   'JavaScript, <b>Dart</b>, C#, C++, lua, HTML/CSS, any other required language',
                   'Image editing, <b>2D/3D concepts</b>, wireframe, <b>UX design</b>',
-                ],
-              ),
-              Section(
-                title: 'Interests',
-                listItems: [
-                  '<b>Human interactions</b>, Movies, <b>Arts</b>, Games, Music, <b>Science</b>, Travel, <b>Technologies</b>.',
                 ],
               ),
               Section(
@@ -67,15 +61,19 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
  + Inclusivity roundtables
  + <b>KNowledge sharing sessions</b>: 3D, spatial displays, a11y, coding principles and more
  + Digital Masterclass''',
-                  '''Mar. 2017: Blending Game Jam, Brussels (VR project Developer)''',
-                  '''Oct. 2015: Kiss Your Teacher (Developer)''',
-                  '''Jan. 2015: Global Game Jam, Antwerpen (3D Artist & Developer)''',
-                  '''Jan. 2014: Global Game Jam, Antwerpen (Developer)''',
-                  '''Sept. 2009 - June 2013: <b>Bachelor</b> as Graphic Designer, specialised in <b>Video Game Developement</b> - HEAJ, Namur.''',
+                  '''Mar. 2017: Blending Game Jam, Brussels
++ Developer VR project''',
+                  '''Oct. 2015: Kiss Your Teacher
++ Developer learning game''',
+                  '''Jan. 2015: Global Game Jam, Antwerpen
++ 3D Artist: Modelisation, Texturing
++ Developer game behaviour''',
+                  '''Jan. 2014: Global Game Jam, Antwerpen
++ Developer game behaviour''',
                 ],
               ),
               Section(
-                title: 'Trainings',
+                title: 'Trainings & Education',
                 listItems: [
                   'Aug. 2024: Accessibility - Abra training',
                   'Oct. 2023: Know your voice',
@@ -85,6 +83,15 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                   'Sep. 2018: <b>Scrum & Agile</b>',
                   'Mar. 2017: Structure and <b>computer Network</b>',
                   'Mar. 2017: <b>Administering Windows Server</b> 2012 R2',
+                  '''Sept. 2009 - June 2013: <b>Bachelor</b> as Graphic Designer, specialised in <b>Video Game Developement</b> - HEAJ, Namur.''',
+                ],
+              ),
+              Section(
+                title: 'Professional History',
+                listItems: [
+                  'Feb. 2018 - Now: <b>Senior specialist, Front-end developer</b>, Deloitte Digital - Zaventem, Belgium',
+                  'Sept. 2013 - Jan. 2018: <b>Interactive Application Developer and Graphic designer</b>, Brandfirst - Brussels, Belgium',
+                  'Dec. 2012 - Mar. 2013: Internship Developer C# - Brandfirst - Brussels, Belgium',
                 ],
               ),
               Section(
@@ -97,11 +104,9 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                 ],
               ),
               Section(
-                title: 'Professional History',
+                title: 'Interests',
                 listItems: [
-                  'Feb. 2018 - Now: <b>Senior specialist, Front-end developer</b>, Deloitte Digital - Zaventem, Belgium',
-                  'Sept. 2013 - Jan. 2018: <b>Interactive Application Developer and Graphic designer</b>, Brandfirst - Brussels, Belgium',
-                  'Dec. 2012 - Mar. 2013: Internship Developer C# - Brandfirst - Brussels, Belgium',
+                  '<b>Human interactions</b>, Movies, <b>Arts</b>, Games, Music, <b>Science</b>, Travel, <b>Technologies</b>.',
                 ],
               ),
             ],
