@@ -1,10 +1,10 @@
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:portfolio/pages/contact.dart';
 import 'package:portfolio/pages/curriculum_vitae.dart';
 import 'package:portfolio/widgets/base_page.dart';
-import 'package:url_strategy/url_strategy.dart';
 
 import 'firebase_options.dart';
 import 'pages/home.dart';
@@ -15,7 +15,7 @@ final navigatorKey = GlobalKey<NavigatorState>();
 // ...
 
 void main() async {
-  setPathUrlStrategy();
+  usePathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.web);
   await FirebaseAppCheck.instance.activate(

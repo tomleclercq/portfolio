@@ -49,10 +49,10 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 InkWell(
-                  child: const Text('Curriculum vitae'),
+                  child: const Text('CV'),
                   onTap: () => CurriculumVitae.routeTo(),
                 ),
-                const Text('-'),
+                const Text(' - '),
                 InkWell(
                   child: const Text('Contact'),
                   onTap: () => Contact.routeTo(),

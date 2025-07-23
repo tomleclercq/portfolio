@@ -36,8 +36,12 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Padding(
                 padding: EdgeInsets.only(bottom: 32.0),
                 child: Text(
-                  'Curriculum Vitae',
-                  style: CustomStyles.h1,
+                  '''Passion drives me.
+I'm a creative thinker and digital creator who thrives at the intersection of human interaction and technology.
+I began my career as an interactive application developer at a marketing agency, then continued at Deloitte, focusing on web and mobile development.
+Over the past years, I've helped shape and enhance user experiences across diverse digital platforms.
+I believe that user-centricity is at the heart of every successful product—and there's nothing more rewarding than building something that truly resonates with people.''',
+                  style: CustomStyles.body,
                 ),
               ),
               Section(
@@ -47,12 +51,6 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                   'JavaScript, <b>Dart</b>, C#, C++, lua, HTML/CSS, any other required language',
                   'Unity3D - plugin, <b>custom editor tools</b>, behaviours',
                   'Image editing, <b>2D/3D concepts</b>, wireframe, <b>UX design</b>',
-                ],
-              ),
-              Section(
-                title: 'Interests',
-                listItems: [
-                  '<b>Human interactions</b>, Movies, <b>Arts</b>, Games, Music, <b>Science</b>, Travel, <b>Technologies</b>.',
                 ],
               ),
               Section(
@@ -67,15 +65,19 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
  + Inclusivity roundtables
  + <b>Knowledge sharing sessions</b>: 3D, spatial displays, a11y, coding principles and more
  + Digital Masterclass''',
-                  '''Mar. 2017: Blending Game Jam, Brussels (VR project Developer)''',
-                  '''Oct. 2015: Kiss Your Teacher (Developer)''',
-                  '''Jan. 2015: Global Game Jam, Antwerpen (3D Artist & Developer)''',
-                  '''Jan. 2014: Global Game Jam, Antwerpen (Developer)''',
-                  '''Sept. 2009 - June 2013: <b>Bachelor</b> as Graphic Designer, specialised in <b>Video Game Developement</b> - HEAJ, Namur.''',
+                  '''Mar. 2017: Blending Game Jam, Brussels
++ Developer VR project''',
+                  '''Oct. 2015: Kiss Your Teacher
++ Developer learning game''',
+                  '''Jan. 2015: Global Game Jam, Antwerpen
++ 3D Artist: Modelisation, Texturing
++ Developer game behaviour''',
+                  '''Jan. 2014: Global Game Jam, Antwerpen
++ Developer game behaviour''',
                 ],
               ),
               Section(
-                title: 'Trainings',
+                title: 'Trainings & Education',
                 listItems: [
                   'Aug. 2024: Accessibility - Abra training',
                   'Oct. 2023: Know your voice',
@@ -85,15 +87,7 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                   'Sep. 2018: <b>Scrum & Agile</b>',
                   'Mar. 2017: Structure and <b>computer Network</b>',
                   'Mar. 2017: <b>Administering Windows Server</b> 2012 R2',
-                ],
-              ),
-              Section(
-                title: 'Memberships',
-                listItems: [
-                  '''<b>Open@Work</b> - Representative for Deloitte''',
-                  'Deloitte <b>EMEA Metaverse</b> - Community member',
-                  '''Deloitte <b>Diversity Equity Inclusion</b>:
- + Proud - Core team''',
+                  '''Sept. 2009 - June 2013: <b>Bachelor</b> as Graphic Designer, specialised in <b>Video Game Developement</b> - HEAJ, Namur.''',
                 ],
               ),
               Section(
@@ -103,6 +97,20 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                   'Feb. 2018 - Jun. 2020: <b>Specialist, application developer</b>, Deloitte Digital - Zaventem, Belgium',
                   'Sept. 2013 - Jan. 2018: <b>Interactive Application Developer and Graphic designer</b>, Brandfirst - Brussels, Belgium',
                   'Dec. 2012 - Mar. 2013: Internship Developer C# - Brandfirst - Brussels, Belgium',
+                ],
+              ),
+              Section(
+                title: 'Memberships',
+                listItems: [
+                  '''<b>Open@Work</b>''',
+                  '''<b>Diversity Equity Inclusion</b>:
+ + 2022-2025  Deloitte LGBT+ focus group, Proud - Core team''',
+                ],
+              ),
+              Section(
+                title: 'Interests',
+                listItems: [
+                  '<b>Human interactions</b>, Movies, <b>Arts</b>, Games, Music, <b>Science</b>, Travel, <b>Technologies</b>.',
                 ],
               ),
             ],
