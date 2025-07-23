@@ -36,7 +36,11 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Padding(
                 padding: EdgeInsets.only(bottom: 32.0),
                 child: Text(
-                  'I am a creative mine, a digital creator. Passion is my driver. I love human interaction and technology ',
+                  '''Passion drives me.
+I'm a creative thinker and digital creator who thrives at the intersection of human interaction and technology.
+I began my career as an interactive application developer at a marketing agency, then continued at Deloitte, focusing on web and mobile development.
+Over the past years, I've helped shape and enhance user experiences across diverse digital platforms.
+I believe that user-centricity is at the heart of every successful product—and there's nothing more rewarding than building something that truly resonates with people.''',
                   style: CustomStyles.body,
                 ),
               ),
