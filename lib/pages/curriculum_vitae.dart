@@ -44,22 +44,22 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
                 title: 'Skills',
                 listItems: [
                   '<b>Font-End</b> Developer: <b>Flutter</b>, React Native, <b>React</b>, native Android & iOS',
-                  'Unity3D - plugin, <b>custom editor tools</b>, behaviours',
                   'JavaScript, <b>Dart</b>, C#, C++, lua, HTML/CSS, any other required language',
+                  'Unity3D - plugin, <b>custom editor tools</b>, behaviours',
                   'Image editing, <b>2D/3D concepts</b>, wireframe, <b>UX design</b>',
                 ],
               ),
               Section(
                 title: 'Experiences',
                 listItems: [
-                  '''Jan. 2021 - Now: <b>Senior Developer & Team Lead</b>
+                  '''Jan. 2021 - May 2025: <b>Senior Developer & Team Lead</b>
  + Application developer: <b>Flutter</b> & <b>React</b>
  + Tools developer: <b>Unity3D C#</b>, Excel & MacOS/Windows scripting
  + Mobile developer''',
-                  '''Mar. 2019 - Now: <b>Facilitator</b>
+                  '''Mar. 2019 - May 2025: <b>Facilitator</b>
  + <b>A11y</b> workshops
  + Inclusivity roundtables
- + <b>KNowledge sharing sessions</b>: 3D, spatial displays, a11y, coding principles and more
+ + <b>Knowledge sharing sessions</b>: 3D, spatial displays, a11y, coding principles and more
  + Digital Masterclass''',
                   '''Mar. 2017: Blending Game Jam, Brussels
 + Developer VR project''',
@@ -89,7 +89,8 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Section(
                 title: 'Professional History',
                 listItems: [
-                  'Feb. 2018 - Now: <b>Senior specialist, Front-end developer</b>, Deloitte Digital - Zaventem, Belgium',
+                  'Jun. 2020 - May 2025: <b>Senior specialist, Application & Front-end developer</b>, Deloitte Digital - Zaventem, Belgium',
+                  'Feb. 2018 - Jun. 2020: <b>Specialist, application developer</b>, Deloitte Digital - Zaventem, Belgium',
                   'Sept. 2013 - Jan. 2018: <b>Interactive Application Developer and Graphic designer</b>, Brandfirst - Brussels, Belgium',
                   'Dec. 2012 - Mar. 2013: Internship Developer C# - Brandfirst - Brussels, Belgium',
                 ],
@@ -97,10 +98,9 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Section(
                 title: 'Memberships',
                 listItems: [
-                  '''<b>Open@Work</b> - Representative for Deloitte''',
-                  'Deloitte <b>EMEA Metaverse</b> - Community member',
-                  '''Deloitte <b>Diversity Equity Inclusion</b>:
- + Proud - Core team''',
+                  '''<b>Open@Work</b>''',
+                  '''<b>Diversity Equity Inclusion</b>:
+ + 2022-2025  Deloitte LGBT+ focus group, Proud - Core team''',
                 ],
               ),
               Section(
