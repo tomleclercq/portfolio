@@ -36,11 +36,13 @@ class _CurriculumVitaeState extends State<CurriculumVitae> {
               Padding(
                 padding: EdgeInsets.only(bottom: 32.0),
                 child: Text(
-                  '''Passion drives me.
-I'm a creative thinker and digital creator who thrives at the intersection of human interaction and technology.
-I began my career as an interactive application developer at a marketing agency, then continued at Deloitte, focusing on web and mobile development.
-Over the past years, I've helped shape and enhance user experiences across diverse digital platforms.
-I believe that user-centricity is at the heart of every successful product—and there's nothing more rewarding than building something that truly resonates with people.''',
+                  '''Bridging People & Technology | Crafting Web & Mobile Experiences
+
+Passion drives me.
+I’m a creative thinker and digital creator who thrives at the intersection of human interaction and technology.
+I began my career as an interactive application developer in a marketing agency, then grew my expertise in web and mobile development.
+Looking ahead, my vision is to shape products that seamlessly connect people and technology.
+I believe user-centricity is the key to every successful product—and there’s nothing more rewarding than creating experiences that truly resonate with people.''',
                   style: CustomStyles.body,
                 ),
               ),
@@ -82,7 +84,7 @@ I believe that user-centricity is at the heart of every successful product—and
                   'Aug. 2024: Accessibility - Abra training',
                   'Oct. 2023: Know your voice',
                   'Nov. 2022: <b>Leading for change</b> & Managing change',
-                  'Jun. 2021: First aids at work',
+                  'Jun. 2021: First aid at work',
                   'Oct. 2018: User story writing',
                   'Sep. 2018: <b>Scrum & Agile</b>',
                   'Mar. 2017: Structure and <b>computer Network</b>',
