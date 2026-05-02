@@ -49,7 +49,8 @@ I believe user-centricity is the key to every successful product—and there’s
               Section(
                 title: 'Skills',
                 listItems: [
-                  '<b>Font-End</b> Developer: <b>Flutter</b>, React Native, <b>React</b>, native Android & iOS',
+                  '<b>Back-End</b> developer: <b>Java</b>, <b>Kotlin</b>, Spring Boot, NodeJS',
+                  '<b>Font-End</b> developer: <b>Flutter</b>, React Native, <b>React</b>, native Android & iOS',
                   'JavaScript, <b>Dart</b>, C#, C++, lua, HTML/CSS, any other required language',
                   'Unity3D - plugin, <b>custom editor tools</b>, behaviours',
                   'Image editing, <b>2D/3D concepts</b>, wireframe, <b>UX design</b>',
@@ -58,6 +59,11 @@ I believe user-centricity is the key to every successful product—and there’s
               Section(
                 title: 'Experiences',
                 listItems: [
+                  '''Jan. 2026 - Present: <b>Senior Developer</b>
+ + Application developer: <b>Kotlin</b> & <b>Java</b>
+ + Release manager
+ + Technical analyst
+ + Tester''',
                   '''Jan. 2021 - May 2025: <b>Senior Developer & Team Lead</b>
  + Application developer: <b>Flutter</b> & <b>React</b>
  + Tools developer: <b>Unity3D C#</b>, Excel & MacOS/Windows scripting
@@ -95,6 +101,7 @@ I believe user-centricity is the key to every successful product—and there’s
               Section(
                 title: 'Professional History',
                 listItems: [
+                  'Jan. 2026 - present: <b>Senior Application developer</b>, Smals detached to SFPD - Brussels, Belgium',
                   'Jun. 2020 - May 2025: <b>Senior specialist, Application & Front-end developer</b>, Deloitte Digital - Zaventem, Belgium',
                   'Feb. 2018 - Jun. 2020: <b>Specialist, application developer</b>, Deloitte Digital - Zaventem, Belgium',
                   'Sept. 2013 - Jan. 2018: <b>Interactive Application Developer and Graphic designer</b>, Brandfirst - Brussels, Belgium',
